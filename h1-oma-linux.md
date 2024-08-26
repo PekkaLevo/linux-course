@@ -23,8 +23,10 @@
 ## a) Linuxin asennus virtuaalikoneeseen
 
   Suoritin harjoituksen asunnossani Helsingissä maanantaina 26.8.2024 , HP 250 G8 Notebook tietokoneellani.
-  Aloitin tehtävän tekemisen klo 19.05 ja ensimmäisenä avasin Virtualbox Manager ohjelman. Ensimmäisenä painoin VirtualBox Managerin etusivulla "new" kuvaketta sivun oikeassa yläreunassa. Helpottakseni
-  virtuaalikoneen tekemistä painoin "expert mode" painiketta, jotta saan kaikki vaadittavat kentät yhdelle sivulle. Painiketta painettuani, avautui uusi ikkuna. 
+  Aloitin tehtävän tekemisen klo 19.05 ja ensimmäisenä avasin Virtualbox Manager ohjelman. Ensimmäisenä painoin VirtualBox Managerin etusivulla "new" kuvaketta sivun oikeassa yläreunassa. 
+  ![kuva](https://github.com/user-attachments/assets/b63ace6f-bf98-45a6-bd28-6e317f02f1c3)
+
+  Helpottakseni virtuaalikoneen tekemistä painoin "expert mode" painiketta, jotta saan kaikki vaadittavat kentät yhdelle sivulle. Painiketta painettuani, avautui uusi ikkuna. 
   "Name and Operating System"-palkin alla olevaan täytin "name:"-palkkiin haluamani nimen virtuaalikoneelle, "Folder:"-palkkiin kansion, johon halusin tallentaa koneen, valitsen "ISO image" painikkeesta "other"
   vaihtoehdon ja etsin lataamani Linux "image", jonka haluan asentaa virtuaalikoneeseen. Seuraavaksi "Type:"-palkkiin valitsin "Linux" ja "Version:"-palkkiin valitsin "Debian (64-bit). Seuraavaksi painoin 
   "Hardware" palkkia. Siirsin "Base memory" mittarin nuolen 4000 mb kohdalle. Seuraavaksi painoin "Hard disk" painiketta ja merkitsin "Create a Virtual Hard Disk Now" painikkeen "kyllä". 
