@@ -173,6 +173,7 @@
   Linuxin asennus, päivitys ja palomuurin asennus olivat täten valmiit.
     
 ## Viittaukset
+
 https://terokarvinen.com/2023/create-a-web-page-using-github/
 
 https://www.gnu.org/philosophy/free-sw.html
