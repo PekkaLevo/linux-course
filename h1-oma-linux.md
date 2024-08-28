@@ -22,7 +22,7 @@
 
 ## a) Linuxin asennus virtuaalikoneeseen
 
-  Suoritin harjoituksen asunnossani Helsingissä maanantaina 26.8.2024 , HP 250 G8 Notebook tietokoneellani.
+  Suoritin harjoituksen asunnossani Helsingissä maanantaina 26.8.2024, HP 250 G8 Notebook tietokoneellani.
   Aloitin tehtävän tekemisen klo 19.05 ja ensimmäisenä avasin Virtualbox Manager ohjelman. Ensimmäisenä painoin VirtualBox Managerin etusivulla "new" kuvaketta sivun oikeassa yläreunassa. 
   
   ![kuva](https://github.com/user-attachments/assets/b63ace6f-bf98-45a6-bd28-6e317f02f1c3)
