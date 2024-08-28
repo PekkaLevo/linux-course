@@ -11,10 +11,10 @@
   ### Free Software Foundation: FSF Free Software Definition
   Vapaa ohjelmisto(free software) tarkoittaa ohjelmistoa, joka kunnioittaa käyttäjien ja yhteisön vapautta, sekä tarjoaa käyttäjilleen
   neljä vapaan ohjelmistolle vaadittua kriteeriä:
-    - Vapaus käyttää ohjelmistoa haluamaansa käyttötarkoitukseen, ilman rajoitteita
-    - Vapaus tutkia ja muokata ohjelmistoa ja sen toimintaa haluamallaan tavalla, edellyttäen oikeuksia lähdekoodiin.
-    - Vapaus jakaa ja levittää kopioita muita auttaaksesi.
-    - Vapaus jakaa ja levittää myös omia muokattuja ja paranneltuja versioita.
+  - Vapaus käyttää ohjelmistoa haluamaansa käyttötarkoitukseen, ilman rajoitteita
+  - Vapaus tutkia ja muokata ohjelmistoa ja sen toimintaa haluamallaan tavalla, edellyttäen oikeuksia lähdekoodiin.
+  - Vapaus jakaa ja levittää kopioita muita auttaaksesi.
+  - Vapaus jakaa ja levittää myös omia muokattuja ja paranneltuja versioita.
   Vapaalla ohjelmistolla korostetaan käyttäjän vapautta. Ohjelmiston ei tarvitse olla ilmainen, jotta se olisi vapaa ohjelmisto, 
   vaan vapaudella tarkoitetaan käyttäjän oikeuteen ohjelmiston vapaaseen käyttöön. Vapaa ohjelmiston kaupallinen käyttö on myös 
   sallittua, päinvastoin sen pitää olla vapaa myös kaupalliseen käyttöön, jos tämä käyttö tapahtuu lain mukaisesti. 
