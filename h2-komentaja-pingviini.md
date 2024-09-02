@@ -14,5 +14,5 @@ Linux:issa ja BSD:ssä käytettävä komentorivi on säilynyt ajankohtaisena jo 
 
 - `apt`:n avulla voidaan hallita ja asentaa ohjelmistoja helposti sekä poistaa niitä. `sudo`-komennolla suoritetaan, jotta saadaan komennoille korkeimmat oikeudet.
 
-- oma huomio: 
+- oma idea: `alias` -komennolla voidaan luoda oikoteitä suosituille komennoille tai tiedoston nimille, mikä nopeuttaa komentorivin käyttöä.
 
