@@ -24,7 +24,7 @@ Linux:issa ja BSD:ssä käytettävä komentorivi on säilynyt ajankohtaisena jo 
 
 - Command line basics revisited https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited
 
-## Käyttämäni virtuaalikoneen tiedot
+### Käyttämäni virtuaalikoneen tiedot
 
 Virtualisointi: VirtualBox 7.0.20
 
@@ -34,7 +34,7 @@ Muistikapasiteeti: 4096 MB
 
 Prosessori: 4 CPU
 
-## Käyttämäni fyysisen tietokoneen tiedot 
+### Käyttämäni fyysisen tietokoneen tiedot 
 
 Konetyyppi: Kannettavatietokone
 
@@ -78,14 +78,14 @@ Komento antoi vastauksena micron sijainnin ja täten olin varma, että micro lö
 
 ![kuva](https://github.com/user-attachments/assets/f55b99a2-b1d9-4fcd-8291-6ec56c7e1ce9)
 
-## Lähteet
+### Lähteet
 
 - https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited
 
 
 ## b) Apt
 
-## Asenna kolme itsellesi uutta komentoriviohjelmaa
+### Asenna kolme itsellesi uutta komentoriviohjelmaa
 
 Jokainen komentoriviohjelma oli minulle uusi, joten minulla oli suuri määrä vaihtoehtoja mistä valita. Ensin minun kuitenkin tuli valita, mitkä ohjelmat halusin asentaa. Tämä osoittautuikin hieman haastavammaksi, sillä en ollut ollenkaan varma minkälaisia ohjelmia halusin asentaa, joten aloin etsiä suositeltavia vaihtoehtoja internetistä.
 
@@ -151,7 +151,7 @@ Ohjelma toimii kuten haluttua, vielä minun täytyi vaihtaa värit takaisin alku
 
 ## c) FHS
 
-## Esittele kansiot ja näytä kuvaavat esimerkit. 
+### Esittele kansiot ja näytä kuvaavat esimerkit. 
 
 Juurikansio on linuxin ylin kansio, jonka alla kaikki muut kansiot sijaitsevat. `cd ..`-komennolla voidaan perääntyä niin kauan, että päästään juurikansioon. Sen sisältöä voidaan katsella komennolla `ls`.
 
@@ -192,7 +192,7 @@ Viimeiseksi katsomme var/log-kansiota. Var/log-kansio sijaitsee juurikansion all
 
 ![kuva](https://github.com/user-attachments/assets/2a88c578-268e-4cd9-9867-cf881438f3d9)
 
-## Lähteet
+### Lähteet
 
 Karvinen, Tero 2020: Command line basics revisited. https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited
 
@@ -200,7 +200,7 @@ Mikä on "/etc"-hakemiston tarkoitus Linux-tiedostojärjestelmässä? https://fi
 
 ## d) The Friendly M
 
-## Kolme esimerkkiä grep-komennon käytöstä
+### Kolme esimerkkiä grep-komennon käytöstä
 
 Tehtävän auttamisessa katsoin youtubesta videon: Linux/Mac Terminal Tutorial: The Grep Command - Search Files and Directories for Patterns of Text https://www.youtube.com/watch?v=VGgTmxXp7xQ. Komennolla voidaan etsiä valitun sanan avulla haluttu rivi tiedostosta.
 
@@ -218,13 +218,13 @@ Tällä kertaa ohjelma tulosti tekstin myös isoilla kirjaimilla. Entäs, jos li
 
 Tällä kertaa ohjelma tulosti myös rivinumerot, joille haetut tekstirivit on kirjoitettu. Greg näyttäisi olevan hyvinki helppokäyttöinen ja kätevä työkalu tiedon etsinnässä.
 
-## Lähteet
+### Lähteet
 
 Linux/Mac Terminal Tutorial: The Grep Command - Search Files and Directories for Patterns of Text https://www.youtube.com/watch?v=VGgTmxXp7xQ
 
 ## e) Pipe
 
-## Esimerkki putkista
+### Esimerkki putkista
 
 Selvitin mitä putkittaminen tekisi, jos kokeilen sekä micron, että catin avulla lolcatin väritystä testi.txt tiedostooni.
 
@@ -232,7 +232,7 @@ Selvitin mitä putkittaminen tekisi, jos kokeilen sekä micron, että catin avul
 
 ## f) Rauta
 
-## Listaa testaamasi koneen rauta, selitä ja analysoi listaus.
+### Listaa testaamasi koneen rauta, selitä ja analysoi listaus.
 
 Ensimmäiseksi asensin ishw-ohjelman, sillä koneellani ei sitä ollut.
 
