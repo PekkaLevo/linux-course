@@ -4,7 +4,7 @@
 
 
 
-# x) Lue ja tiivistä: Command line basics revisited
+## x) Lue ja tiivistä: Command line basics revisited
 
 Linux:issa ja BSD:ssä käytettävä komentorivi on säilynyt ajankohtaisena jo pitkään, vaikka se onkin vanhempi kuin itse internet. Se on kätevä, nopea, ilmaiseva ja helposti automatisoitava. 
 
