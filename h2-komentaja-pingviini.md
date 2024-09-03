@@ -1,7 +1,7 @@
 
-### h2 Komentaja Pingviini
+## h2 Komentaja Pingviini
 
-## x) Lue ja tiivistä: Command line basics revisited
+# x) Lue ja tiivistä: Command line basics revisited
 
 Linux:issa ja BSD:ssä käytettävä komentorivi on säilynyt ajankohtaisena jo pitkään, vaikka se onkin vanhempi kuin itse internet. Se on kätevä, nopea, ilmaiseva ja helposti automatisoitava. 
 
@@ -21,7 +21,7 @@ Linux:issa ja BSD:ssä käytettävä komentorivi on säilynyt ajankohtaisena jo 
 
 - Command line basics revisited https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited
 
-## Järjestelmätiedot
+# Järjestelmätiedot
 
 Virtualisointi: VirtualBox 7.0.20
 
@@ -43,7 +43,7 @@ Muisti: 8GB
 
 # Käyttämäni virtuaalikoneen tiedot
 
-## a) Asenna micro-editori
+# a) Asenna micro-editori
 
 Ensitöikseni avasin virtuaalikoneeni ja kirjauduin sisään. Seuraavaksi avasin komentorivin "applications"-painikkeen alta. 
 
@@ -82,7 +82,7 @@ Komento antoi vastauksena micron sijainnin ja täten olin varma, että micro lö
 - https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited
 
 
-## b) Apt
+# b) Apt
 
 # Asenna kolme itsellesi uutta komentoriviohjelmaa
 
@@ -148,7 +148,7 @@ Ohjelma latautui onnistuneesti. Päätin kokeilla ohjelmaa muuttamalla komentori
 
 Ohjelma toimii kuten haluttua, vielä minun täytyi vaihtaa värit takaisin alkuperäisiin väreihin, joka tapahtuu painamalla `ctrl + D`. 
 
-## c) FHS
+# c) FHS
 
 # Esittele kansiot ja näytä kuvaavat esimerkit. 
 
@@ -197,7 +197,7 @@ Karvinen, Tero 2020: Command line basics revisited. https://terokarvinen.com/202
 
 Mikä on "/etc"-hakemiston tarkoitus Linux-tiedostojärjestelmässä? https://fi.eitca.org/cybersecurity/eitc-is-lsa-linux-system-administration/linux-filesystem/filesystem-layout-overview/examination-review-filesystem-layout-overview/what-is-the-purpose-of-the-etc-directory-in-the-linux-file-system/
 
-## d) The Friendly M
+# d) The Friendly M
 
 # Kolme esimerkkiä grep-komennon käytöstä
 
@@ -221,7 +221,7 @@ Tällä kertaa ohjelma tulosti myös rivinumerot, joille haetut tekstirivit on k
 
 Linux/Mac Terminal Tutorial: The Grep Command - Search Files and Directories for Patterns of Text https://www.youtube.com/watch?v=VGgTmxXp7xQ
 
-## e) Pipe
+# e) Pipe
 
 # Esimerkki putkista
 
@@ -229,7 +229,7 @@ Selvitin mitä putkittaminen tekisi, jos kokeilen sekä micron, että catin avul
 
 ![kuva](https://github.com/user-attachments/assets/1e8d69f9-5be3-4687-b335-eec0af70548f)
 
-## f) Rauta
+# f) Rauta
 
 # Listaa testaamasi koneen rauta, selitä ja analysoi listaus.
 
