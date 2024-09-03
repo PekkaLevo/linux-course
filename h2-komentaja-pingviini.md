@@ -20,11 +20,11 @@ Linux:issa ja BSD:ssä käytettävä komentorivi on säilynyt ajankohtaisena jo 
 
 - oma idea: `alias` -komennolla voidaan luoda oikoteitä suosituille komennoille tai tiedoston nimille, mikä nopeuttaa komentorivin käyttöä.
 
-# Lähteet
+## Lähteet
 
 - Command line basics revisited https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited
 
-# Järjestelmätiedot
+## Käyttämäni virtuaalikoneen tiedot
 
 Virtualisointi: VirtualBox 7.0.20
 
@@ -34,7 +34,7 @@ Muistikapasiteeti: 4096 MB
 
 Prosessori: 4 CPU
 
-# Käyttämäni fyysisen tietokoneen tiedot 
+## Käyttämäni fyysisen tietokoneen tiedot 
 
 Konetyyppi: Kannettavatietokone
 
@@ -43,8 +43,6 @@ Käyttöjärjestelmä:  Windows 11 Home, 64bit, x64-suoritin
 Prosessori: 11th Gen Interl(R) COre(TM) i3
 
 Muisti: 8GB
-
-# Käyttämäni virtuaalikoneen tiedot
 
 ## a) Asenna micro-editori
 
