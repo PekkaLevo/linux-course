@@ -54,27 +54,27 @@ Ensitöikseni avasin virtuaalikoneeni ja kirjauduin sisään. Seuraavaksi avasin
 
 Jatkoin tehtävää suorittamalla komennon: `sudo apt-get update` ja annoin käyttäjäni salasanan.
 
-![kuva](https://github.com/user-attachments/assets/99bb6f12-b25f-4d75-b965-2c1f60c84bb8)
+![kuva](https://github.com/user-attachments/assets/62a38b3b-176f-4f97-ab3f-165888943004)
 
 Seuraavaksi tarkistin löytyykö micro-editori listalta komennolla `apt-cache search micro.
 
-![kuva](https://github.com/user-attachments/assets/75850303-e8e1-4a78-b23d-9e9b8a11344b)
+![kuva](https://github.com/user-attachments/assets/1de2dd50-6a2b-4dc9-902a-cfb3b8eac5c0)
 
 Micro löytyikin pienen etsinnän jälkeen listalta.
 
-![kuva](https://github.com/user-attachments/assets/83118503-b191-4d78-8821-cfd065ba32e3)
+![kuva](https://github.com/user-attachments/assets/5cfbdc19-ef58-4410-8eaa-07dd0bcfce0b)
 
 Seuraavaksi asensin micron paketinhallinan kautta komennolla `sudo apt-get -y install micro`
 
-![kuva](https://github.com/user-attachments/assets/b4ec1030-7737-4818-aad3-6d449545f034)
+![kuva](https://github.com/user-attachments/assets/15b320c6-5c5a-48aa-93b6-cd2f921a196b)
 
 Tässä tapauksessa olin jo ehtinyt asentaa ohjelman etukäteen, joten komentorivi ilmoitti asiasta ja kertoi myös, että micro oli myös päivitetty uusimpaan versioonsa.
 
-![kuva](https://github.com/user-attachments/assets/f1a4e462-303b-4f32-aa7d-5f7844b92bc5)
+![kuva](https://github.com/user-attachments/assets/a648745e-4d15-4413-9fcc-69d764bf0cfb)
 
 Tarkistin vielä micron olemassa olon suorittamalla komennon `dpkg --listfiles micro`.
 
-![kuva](https://github.com/user-attachments/assets/a617c043-a32e-4db9-b98e-05db057f174c)
+![kuva](https://github.com/user-attachments/assets/61643a7a-b8f0-45ee-8e38-7c9ee23a9e1f)
 
 Komento antoi vastauksena micron sijainnin ja täten olin varma, että micro löytyi koneeltani.
 
