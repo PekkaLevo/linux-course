@@ -246,4 +246,9 @@ Seuraavaksi testasin tehtävänannossa annettua komentoa: `sudo lshw -short -san
 ![kuva](https://github.com/user-attachments/assets/6078a4b9-578c-4354-95af-16bbbd77f5b8)
 
 En kaikkia listauksen tietoja osannut lukea, mutta selkeästi kyseessä on tiedot järjestelmästä.
-Listauksesta selviää ainakin, että koneena toimii virtualbox ja virtualbox toimii kannettavan tietokoneen kautta, input9 toimii virutaalisesti hiirellä. Listaus kertoo myös käytettävissä olevan eli oman koneen intel core i3 prosessorin, mihin tallennukset tallennetaan eli tässä tapauksessa SATA C asemaan. Käytettävää muistia on 4GiB, jäljellä olevaa muistia on 21GB. Listauksen alhaalta näkyy myös eri inputien vastineet eli mitä inputia vastaavat painikkeet tekevät, kuten input2 on virtapainike ja input4 näytösäästöpainike.
+
+- Listauksesta selviää ainakin, että koneena toimii virtualbox ja virtualbox toimii kannettavan tietokoneen kautta.
+
+- Listaus kertoo myös käytettävissä olevan eli oman koneen intel core i3 prosessorin.
+
+- Käytettävää muistia on virtuaalikoneella 4GiB, jäljellä olevaa muistia on 11GB. 
