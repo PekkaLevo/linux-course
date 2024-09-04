@@ -202,7 +202,7 @@ Mikä on "/etc"-hakemiston tarkoitus Linux-tiedostojärjestelmässä? https://fi
 
 ### Kolme esimerkkiä grep-komennon käytöstä
 
-Tehtävän auttamisessa katsoin youtubesta videon, josta sain apua tehtävän suorittamiseen. Komennolla voidaan etsiä valitun sanan avulla haluttu rivi tiedostosta.
+Tehtävän auttamisessa katsoin youtubesta videon, josta sain apua tehtävän suorittamiseen. `grep`-komennolla voidaan etsiä valitun sanan avulla haluttu rivi tiedostosta.
 
 Tein tehtävää varten sisältöä aikasemmin tekemääni testi.txt tiedostoon. Kokeilin löytyykö tekemäni teksti komennolla `grep Tämän testi.txt`.
 
