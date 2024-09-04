@@ -226,7 +226,7 @@ Linux/Mac Terminal Tutorial: The Grep Command - Search Files and Directories for
 
 ### Esimerkki putkista
 
-Selvitin mitä putkittaminen tekisi, jos kokeilen sekä micron, että catin avulla lolcatin väritystä testi.txt tiedostooni.
+Selvitin mitä putkittaminen tekisi, jos kokeilen sekä micron, että catin avulla lolcatin väritystä testi.txt tiedostooni. Näillä komennoilla sain `testi.txt`-tiedoston sisällön kahdella eri värityksellä.
 
 ![kuva](https://github.com/user-attachments/assets/1e8d69f9-5be3-4687-b335-eec0af70548f)
 
