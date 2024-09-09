@@ -1,9 +1,9 @@
 # h3 Hello Web Server
 
 
-## x) 
+## x) Lue ja tiivistä
 
-Lue ja tiivistä
+
 
 ### Name-based Virtual Host Support
 
