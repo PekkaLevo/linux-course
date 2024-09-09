@@ -38,7 +38,7 @@ Karvinen 2018: Name Based Virtual Hosts on Apache – Multiple Websites to Singl
 
 ## Järjestelmätiedot
 
-# Virtuaalikone
+## Virtuaalikone
 
 - Virtualisointi: VirtualBox 7.0.20
 
@@ -48,7 +48,7 @@ Karvinen 2018: Name Based Virtual Hosts on Apache – Multiple Websites to Singl
 
 - Prosessori: 4 CPU
 
-# Fyysisen kone
+## Fyysisen kone
 
 - Konetyyppi: Kannettavatietokone
 
