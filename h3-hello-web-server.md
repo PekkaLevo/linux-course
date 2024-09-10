@@ -14,7 +14,7 @@
 - Name-based virtual hosting:n avulla vähennetään Ip-osoitteita määrää, joka on suositeltavaa, ellei erikseen tarvita Ip-pohjaista isännöintiä.
 
 
-### Karvinen 2018: Name Based Virtual Hosts on Apache – Multiple Websites to Single IP Address
+### Name Based Virtual Hosts on Apache – Multiple Websites to Single IP Address
 
 - Apachella voidaan yhden Ip-tunnuksen ja monen verkkosivun käytön sijaan, yhdellä Ip-osoitteella isännöidä monia verkkotunnuksia.
 
