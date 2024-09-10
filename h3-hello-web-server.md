@@ -183,7 +183,8 @@ Validator ei antanut muita muutosohjeita, kuin "trailing slash"-kohdan voisi poi
 
 `curl -I`-komentoa käytettäessä `hattu.example.com`-osoitteeseen, saamme seuraavia tietoja:
 
-- HTTP/1.1 200 OK: Protokolla, sekä HTTP-vastauskoodi 200 ja "OK" eli onnistunut.
+#### - HTTP/1.1 200 OK: 
+Protokolla, sekä HTTP-vastauskoodi 200 ja "OK" eli onnistunut.
 
 - Date: Aika, jolloin pyyntö tehtiin. 
 
