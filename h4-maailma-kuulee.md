@@ -289,9 +289,30 @@ Lopetusaika: Maanantai 22.10 16.9.2024
 
 ![Oman palvelimen kuva](https://github.com/user-attachments/assets/48142fe5-e4d9-4c83-a206-2c07f7401762)
 
+
+Päivitys tistaina 17.9.2024 klo 15.16.
+
+Muokkasin hieman palvelimeni nettisivuja lataamalla Micro-tekstieditorin, poistamalla Apachen oletussivun ja luomalla uuden oletussivun.
+
+![kuva](https://github.com/user-attachments/assets/977aecbf-efc0-4224-b960-6b68d2204b4e)
+
+![kuva](https://github.com/user-attachments/assets/20724456-470a-4915-902a-b71ff7d257fe)
+
+
+Lisäsin palvelimeni nettisivuun tekstieditorilla rungon, jotta sivulla olisi tulevaisuudessa valmis pohja, josta helppo jatkaa sivun muokkausta. 
+
+![kuva](https://github.com/user-attachments/assets/dc88f1f5-2bfd-40fa-9aad-16152c18b02d)
+
+![kuva](https://github.com/user-attachments/assets/331c2ce8-16cb-4bc9-8e15-156108eec95e)
+
+
 ### Lähteet
 
 - Karvinen 2012: First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean/?fromSearch=first%20steps
 
 - Karvinen, Tero 2018: Name Based Virtual Hosts on Apache – Multiple Websites to Single IP Address. https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/
+
+- Susanna Lehto 2022: Teoriasta käytäntöön pilvipalvelimen avulla https://susannalehto.fi/2022/teoriasta-kaytantoon-pilvipalvelimen-avulla-h4/
+
+- Linode https://www.linode.com/
 
