@@ -305,6 +305,9 @@ Lisäsin palvelimeni nettisivuun tekstieditorilla rungon, jotta sivulla olisi tu
 
 ![kuva](https://github.com/user-attachments/assets/331c2ce8-16cb-4bc9-8e15-156108eec95e)
 
+Tältä palvelimeni etusivu nyt näyttää.
+
+![kuva](https://github.com/user-attachments/assets/1105c0f3-5615-41a0-b19f-d36446346272)
 
 ### Lähteet
 
