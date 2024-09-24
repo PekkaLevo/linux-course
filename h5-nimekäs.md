@@ -185,6 +185,19 @@ Pidin hetken taukoa a-tehtävän onnistumisen jälkeen.`
 
 Lähdin aloittamaan tehtävää tarkastamalla mahdollisien ohjelmien latauksen tarvetta. Komentoa `dig` käyttämiseen tarvittavan `dnsutils`-ohjelman olinkin jo ladannut,     sillä käytin ´dig´-komentoa a-tehtävässä. Selvitin kuitenkin `man dig`-komennolla `dig`-komennon käyttötarkoituksen. Komennolla voidaan tutkia DNS-serverien lähettämää vastausta kun niitä haetaan komentoriviltä. Komennolla ´dig -h´ saadaan yhteenveto käytettävistä komennoista. 
 
+Esimerkki `dig -h`-kyselystä `peklev.com`-sivulleni, jossa vastaus oli melko pitkä.
+
+![kuva](https://github.com/user-attachments/assets/1291e316-233a-45d0-a778-1f7e12a95297)
+
+![kuva](https://github.com/user-attachments/assets/9761e45d-da24-4e7f-b27b-3fbfba9e59c4)
+
+![kuva](https://github.com/user-attachments/assets/2623e8f2-deae-402b-9297-6b05c7d9b04f)
+
+![kuva](https://github.com/user-attachments/assets/9cbe8457-45da-42b8-ad5a-bf8dcfc4617c)
+
+
+
+
 Kokeilin ensin komentoa omiin `peklev.com`-sivuihin, jonka olinkin jo aikasemmin tehnyt a-tehtävässä. 
 
 ![kuva](https://github.com/user-attachments/assets/8673daf7-e576-4aaa-a8d9-834d3626965e)
