@@ -109,7 +109,7 @@ vastaukseksi:
 
 ![kuva](https://github.com/user-attachments/assets/34c52415-ffe2-49ab-a692-61795ddfad75)
 
-Chatgpt:n mukaan ilmeisesti DNS-asetuksissani oli nyt vikaa, joten kävin tarkistamassa tilanteen ja huomasin, että toinen A-tietueeni oli poistunut, joten tein A-tietueet sekä ´@´, että `www`-isännille, jotta sivu toimisi molemmilla hauilla.
+Chatgpt:n mukaan ilmeisesti DNS-asetuksissani oli nyt vikaa, joten kävin tarkistamassa tilanteen Namecheapista ja huomasin, että toinen A-tietueeni oli poistunut, joten tein A-tietueet sekä ´@´, että `www`-isännille, jotta sivu toimisi molemmilla hauilla.
 
 ![kuva](https://github.com/user-attachments/assets/8a4ef45f-156b-4b81-a746-1646af4373ac)
 
@@ -137,15 +137,19 @@ Tein vielä viimeiseksi validatorin kautta tarkastuksen sivun validisuudesta.
 
 ## b) Alidomain
 
-Vaikka ensimmäinen tehtäväni ei vielä toiminut halutulla tavalla päätin tehdä ainakin alidomainit valmiiksi. Hain Namecheapin omilta sivuilta (https://www.namecheap.com/support/knowledgebase/article.aspx/9776/2237/how-to-create-a-subdomain-for-my-domain/) ohjeet alidomainien tekemiseen.
+Maanantai 23.9.2024 klo 20.26
+
+Vaikka ensimmäinen tehtäväni ei vielä toiminut halutulla tavalla päätin tehdä ainakin alidomainit valmiiksi ennen a-tehtävän onnistumista. Hain Namecheapin omilta sivuilta (https://www.namecheap.com/support/knowledgebase/article.aspx/9776/2237/how-to-create-a-subdomain-for-my-domain/) ohjeet alidomainien tekemiseen.
 
 Aloitin luomalla Advanced DNS-asetusten alta painamalla add new record-painiketta ja täytin sekä A-tietueen tiedot, että CNAME-tiedot luomistani alidomaintiedostoista.
 
 ![kuva](https://github.com/user-attachments/assets/50c20bcc-5080-4d66-8a0f-d7c9d6e55122)
 
-
+Alidomanien näkyvyyden tarkistinkin jo edellisessä tehtävässä.
 
 ## c) Pubkey
+
+Tiistai 24.9.2024 klo 12.10
 
 Lähdin ensimmäisenä tutkimaan mikä pubkey on ja miten se toimii. SSH Academyn-sivuilta (https://www.ssh.com/academy/ssh/public-key-authentication) löysin paljon tietoa asiasta. Kyseessä on lyhenne julkisesta avaimesta ja kyseessä on salaustekniikka, tarkemmin epäsymmetrinen salaus. Tässä salauksessa käytetään avain paria, julkinen- ja yksityinen avain. Julkinen avain on julkisesti jaetavissa, kun taas yksityinen avain pidetään salassa muilta. 
 
@@ -167,13 +171,79 @@ Tarkistin vielä kaiken varalta uudelta komentoriviltä, että kirjautuminen onn
 
 ## d) DNS-tiedot "host" ja "dig"-komennoilla
 
-Tehtävänanto: Tutki jonkin nimen DNS-tietoja 'host' ja 'dig' -komennoilla. Käytä kumpaakin komentoa kaikkiin nimiin ja vertaa tuloksia. Katso man-sivulta, miten komennot toimivat - esimerkiksi miten 'dig' näyttää kaikki kentät. Analysoi tulokset. Etsi tarvittaessa uusia lähteitä haastaviin kohtiin. Sähköpostin todentamiseen liittyvät SPF ja DMARC -tietojen yksityiskohdat on jätetty vapaaehtoiseksi lisätehtäväksi. Tutkittavat nimet:
+Tiistai 24.9.2024 klo 14.34
+
+`Tehtävänanto: Tutki jonkin nimen DNS-tietoja 'host' ja 'dig' -komennoilla. Käytä kumpaakin komentoa kaikkiin nimiin ja vertaa tuloksia. Katso man-sivulta, miten komennot toimivat - esimerkiksi miten 'dig' näyttää kaikki kentät. Analysoi tulokset. Etsi tarvittaessa uusia lähteitä haastaviin kohtiin. Sähköpostin todentamiseen liittyvät SPF ja DMARC -tietojen yksityiskohdat on jätetty vapaaehtoiseksi lisätehtäväksi. Tutkittavat nimet:
 
 -  Oma domain-nimesi. Vertaa tuloksia nimen vuokraajan (namecheap.com, name.com...) weppiliittymässä näkyviin asetuksiin.
 
 - Jonkin pikkuyrityksen, kerhon tai yksittäisen henkilön weppisivut. (Ei kuitenkaan kurssikaverin tällä viikolla vuokrattua nimeä).
 
 - Jonkin suuren ja kaikkien tunteman palvelun tiedot.
+
+Pidin hetken taukoa a-tehtävän onnistumisen jälkeen.`
+
+Lähdin aloittamaan tehtävää tarkastamalla mahdollisien ohjelmien latauksen tarvetta. Komentoa `dig` käyttämiseen tarvittavan `dnsutils`-ohjelman olinkin jo ladannut,     sillä käytin ´dig´-komentoa a-tehtävässä. Selvitin kuitenkin `man dig`-komennolla `dig`-komennon käyttötarkoituksen. Komennolla voidaan tutkia DNS-serverien lähettämää vastausta kun niitä haetaan komentoriviltä. Komennolla ´dig -h´ saadaan yhteenveto käytettävistä komennoista. 
+
+Kokeilin ensin komentoa omiin `peklev.com`-sivuihin, jonka olinkin jo aikasemmin tehnyt a-tehtävässä. 
+
+![kuva](https://github.com/user-attachments/assets/8673daf7-e576-4aaa-a8d9-834d3626965e)
+
+Etsin lisätietoa siitä, mitä kaikkea tietoa ´dig´-komennon vastauksessa annetaan ja löysin Digitaloceanin (https://www.digitalocean.com/community/tutorials/how-to-retrieve-dns-information-using-dig) ja Matthias Geniarin sivuilta (https://ma.ttias.be/making-full-use-of-dig-in-linux/) apua tiedon tarkastamisessa.
+
+- `GOT ANSWER`-kohdan alla saadaan tieto statuksesta, joka tässä tapauksessa oli `NOERROR` eli onnistunut kysely.
+
+- `flags`- osiossa voi olla monia vastauksia ja niiden merkitys riippuu niiden arvosta:
+
+      - AA tarkoittaa auktoritatiivistä vastausta eli kyselyyn vastasi auktoritatiivinen nimipalvelin.
+
+      - RD tarkoittaa, että rekursiota on pyydetty.
+
+      - RA tarkoittaa, että rekursio on saatavilla
+
+      - QR tarkoittaa yleisesti kyselyn vastausta, joka näkyi myös omassa ´dig´-kyselyssäni.
+
+- `QUESTION SECTION`: ´dig´-kysely pyytää isäntänimeä, joka tässä tapauksessa oli peklev.com ja kysyy myös tietoa A-tietueesta.
+
+- `ANSWER SECTION`: ´dig´-kyselyn palauttamat tietueet, joka usein on tärkein tieto kyselyn tekijälle. Vastauksena ´dig´-kysely palautti IP-osoitteeni ja kyselyyn kestäneen ajan.
+
+- Omassa haussani ei näkynyt `AUTHORITY SECTION`, joka kertoisi auktoriset palvelimet, jotka ylläpitävät domainnimen tietueita. Tällaisia minulla ei ollut.
+
+- Myöskään `ADDITIONAL SECTION` ei näkynyt oman sivuni ´dig´-kyselyssä, mutta se voi sisältää mahdollisia lisätietoja, joita saatetaan välittää vastauksen mukana.
+
+Vertaillakseni vastauksia, kokeilin ´dig´-kyselyä myös alidomainilleni, joihin sain hyvin samanlaiset vastaukset. Molemmissa näkyy IP-osoitteeni 172.234.116.108.
+
+![kuva](https://github.com/user-attachments/assets/d5ea3ef1-a511-4175-af26-0abd8c3fa836)
+
+![kuva](https://github.com/user-attachments/assets/d77a44c7-20c6-4972-89ce-b6d8fc8641d2)
+
+Tein vertailuksi ´dig´-kyselyn `store.steampowered.com`, sekä `lautapeliseura.fi`-sivustoille. Kummastakin hausta näkyi hyvin paljolti samanlaista teitoa kuin omilta sivuiltani.
+
+![kuva](https://github.com/user-attachments/assets/5d87b809-01f9-4ca4-b5a0-516db172c175)
+
+![kuva](https://github.com/user-attachments/assets/46b9ca61-5649-48be-a1de-e68aa02742b4)
+
+
+
+Myös `host`-komentoa olin jo ehtinyt käyttää aikasemmassa tehtävässä, joten sitäkään varten ei minun tarvinnut ladata ohjelmaa erikseen.
+
+Tein `host`-kyselyn kaikkiin domaineihini sekä vielä Steam-verkkosivuun. `host peklev.com`-kyselyn olinkin jo tehnyt a-tehtävässä.
+
+![kuva](https://github.com/user-attachments/assets/6c307c82-2009-4898-bff0-7f7e3568ec36)
+
+![kuva](https://github.com/user-attachments/assets/cb8f5e13-a6cf-45d1-b0b5-9992fc56b1ab)
+
+Toisin kuin CNAME-tietueena tekemäni alidomani `kuva.peklev.com`, A-tietueena tekemäni ìnfo.peklev.com` antoi ainoastaan IP-osoitteeni vastauksena, mutta ei MX-tietuetta.
+
+![kuva](https://github.com/user-attachments/assets/04a3273f-a70a-4563-b36e-f3ffe5d3e2d1)
+
+Viimeiseksi tein `host`-kyselyn ´store.steampowered.com`-sivustolle, joka antoi ainoastaan sivun IP-osoitteen vastaukseksi. Kokeilin myös kyselyä `lautapeliseura.fi`-sivustolle, joka antoi myös MX-tietueen. MX-tietue kertoo mihin palvelimiin sähköposti tulisi toimittaa verkkotunnusta varten.
+
+![kuva](https://github.com/user-attachments/assets/c8d629c0-86c6-423d-9fcd-a30d65307694)
+
+![kuva](https://github.com/user-attachments/assets/e3eab5ec-38bb-4681-91f8-1dcafe74181d)
+
+Lopetus tiistai 24.9.2024 klo 15.56.
 
 ## Lähteet
 
@@ -191,4 +261,7 @@ SSH Academy: What is SSH Public Key Authentication? https://www.ssh.com/academy/
 
 SSH Academy: Creating an SSH Key Pair for User Authentication https://www.ssh.com/academy/ssh/keygen
 
+DigitalOcean: How to Retrieve DNS Information Using Dig https://www.digitalocean.com/community/tutorials/how-to-retrieve-dns-information-using-dig
+
+Matthias Geniar: Making Full Use Of ‘Dig’ In Linux  https://ma.ttias.be/making-full-use-of-dig-in-linux/
   
