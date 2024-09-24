@@ -196,9 +196,9 @@ Esimerkki `dig -h`-kyselystä `peklev.com`-sivulleni, jossa vastaus oli melko pi
 ![kuva](https://github.com/user-attachments/assets/9cbe8457-45da-42b8-ad5a-bf8dcfc4617c)
 
 
+-------------------------------------------------------------------------------------
 
-
-Kokeilin ensin komentoa omiin `peklev.com`-sivuihin, jonka olinkin jo aikasemmin tehnyt a-tehtävässä. 
+Kokeilin ensin `dig`-komentoa omiin `peklev.com`-sivuihin, jonka olinkin jo aikasemmin tehnyt a-tehtävässä. 
 
 ![kuva](https://github.com/user-attachments/assets/8673daf7-e576-4aaa-a8d9-834d3626965e)
 
