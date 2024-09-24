@@ -119,7 +119,7 @@ Tämän jälkeen Chatgpt neuvoi seuraamaan sivujeni tietueiden päivittymistä `
 
 ![kuva](https://github.com/user-attachments/assets/c1e47fbd-e93f-4ee0-a55c-d56e5d5f2ab5)
 
-Vihdoinkin DNS oli päivittynyt ja sivuni toimivat taas. Toki kaikille sivuille voisi tehdä paljon hienosäätöä, että olisivat hienommat, mutta toimivat halutulla tavalla mikä on tärkeintä.
+Vihdoinkin DNS oli päivittynyt ja sivuni toimivat taas. Toki kaikille sivuille voisi tehdä paljon hienosäätöä, että olisivat hienommat, mutta toimivat halutulla tavalla, mikä on tärkeintä.
 
 ![kuva](https://github.com/user-attachments/assets/62f7a353-0cb6-42b2-8d51-3999dc2b678b)
 
