@@ -260,7 +260,11 @@ Lopetus tiistai 24.9.2024 klo 15.56.
 
 ## Lähteet
 
+Karvinen, Tero 2018: Name Based Virtual Hosts on Apache – Multiple Websites to Single IP Address. https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/
 
+Karvinen, Tero: Linux-palvelimet. https://terokarvinen.com/linux-palvelimet/
+
+Chatgpt: https://chatgpt.com/
 
 Markup Validation Service https://validator.w3.org/
 
