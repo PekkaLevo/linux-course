@@ -72,17 +72,108 @@ Jatkoin kuitenkin suorittamalla uusille `kuva.peklev.com` ja `info.peklev.com`-s
 
 ![kuva](https://github.com/user-attachments/assets/376e867b-85b0-4173-aedb-26c512441f41)
 
-
 Päätin tässä vaiheessa jatkaa myöhemmin, kun jäin umpikujaan tehtävän kanssa.
 
 Lopetus maanantai 23.9.2024 klo 20.26
 
+Jatkoin tiistaina 24.9.2024 klo 9.36
+
+Yön mietittyäni ja uusi aivoilla päivään lähtien muistin etten ollut vielä muokannut `etc/hosts`-tiedostoon oikeuksia uusiin tiedostoihin. 
+
+![kuva](https://github.com/user-attachments/assets/0e4c010f-1e50-4c17-bbd7-c1f5ebb633d9)
+
+
+Hosts-tiedot muokattuani, tein publicsites kansioon muutoksen ja siirsin `kuva.peklev.com` ja `info.peklev.com`-tiedostot `peklev.com`-tiedostoon.
+
+![kuva](https://github.com/user-attachments/assets/b3bf81f3-5b88-43a2-9c38-26b91f885d0b)
+
+Sivustoni ei kuitenkaan vielä näkynyt `curl`-komennon avulla, joten kysyin Chatgpt:ltä apua ja se neuvoi antamaan `sudo chmod 711 /home/peksi`-komennon sekä uudestaan `sudo chmod 755`-komennon mutta tarkemmin `/home/peksi/publicsites`-tiedostoon kohdentaen. Nämä komennot tehtyäni kokeilin `curl`-komentoa uudelleen, mutta mitään muutosta ei vielä ollut tapahtunut.
+
+![kuva](https://github.com/user-attachments/assets/133e0b23-779a-4054-835b-87b358736f90)
+
+Jatkoin kuitenki Chatgpt:n neuvoja tilanteen ratkaisemiseksi ja kopioin `sudo tail -f /var/log/apache2/error.log`-tiedot Chatgpt:lle. Tähän Chatgpt kertoi virhelokin tiedoista, ettei minulla ollut `peklev.com`-tiedostossa `index.html`-tiedostoa, jonka loin tämän jälkeen.
+
+![kuva](https://github.com/user-attachments/assets/4d937ea6-5188-4279-a3b5-2e82ed0c11ca)
+
+Nyt `curl`-komennolla sain tiedoston näkymään, mikä oli tässä vaiheessa jo iso edistys. Muokkasin tässä vaiheessa index.html tiedostoa hieman mieluisammaksi.
+
+![kuva](https://github.com/user-attachments/assets/c03deead-2d04-4243-b595-00104c05c8ed)
+
+
+Sivuni eivät kuitenkaa vieläkään toimineet, joten selvitin muita Chatgpt:n antamia neuvoja. Seuraavaksi Chatgpt ehdotti `apache2.conf`-tiedostoon `ServerName peklev.com` lisäämistä, joten kokeilin tätä vaihtoehtoa ja käynnistin Apachen uudelleen. 
+
+![kuva](https://github.com/user-attachments/assets/a20f0d74-0447-4e80-8adc-3b1f99b6a85e)
+
+Tämäkään ei tosin vielä muuttanut nettisivuani toimivaksi. Seuraavaksi tarkistin `host 172.234.116.108`-komennolla, mikä on ip-osoitteeni host. Komentorivi antoi
+vastaukseksi: 
+
+![kuva](https://github.com/user-attachments/assets/34c52415-ffe2-49ab-a692-61795ddfad75)
+
+Chatgpt:n mukaan ilmeisesti DNS-asetuksissani oli nyt vikaa, joten kävin tarkistamassa tilanteen ja huomasin, että toinen A-tietueeni oli poistunut, joten tein A-tietueet sekä ´@´, että `www`-isännille, jotta sivu toimisi molemmilla hauilla.
+
+![kuva](https://github.com/user-attachments/assets/8a4ef45f-156b-4b81-a746-1646af4373ac)
+
+![kuva](https://github.com/user-attachments/assets/75da3e63-498e-4ee4-9f95-bc273423312a)
+
+Tämän jälkeen Chatgpt neuvoi seuraamaan sivujeni tietueiden päivittymistä `dig peklev.com`-komennolla, sillä `Got answer: `-rivi oli tyhjä, mutta siihen pitäisi tulla sivuni ip-osoite kun DNS on päivittynyt.
+
+![kuva](https://github.com/user-attachments/assets/c1e47fbd-e93f-4ee0-a55c-d56e5d5f2ab5)
+
+Vihdoinkin DNS oli päivittynyt ja sivuni toimivat taas. Toki kaikille sivuille voisi tehdä paljon hienosäätöä, että olisivat hienommat, mutta toimivat halutulla tavalla mikä on tärkeintä.
+
+![kuva](https://github.com/user-attachments/assets/62f7a353-0cb6-42b2-8d51-3999dc2b678b)
+
+![kuva](https://github.com/user-attachments/assets/8d7167ff-13ec-4b65-b1d1-da0933b0653e)
+
+![kuva](https://github.com/user-attachments/assets/89ba83dc-db58-4adf-b9e4-06e773073409)
+
+Tein vielä viimeiseksi validatorin kautta tarkastuksen sivun validisuudesta.
+
+![kuva](https://github.com/user-attachments/assets/b5a0e684-2189-4762-a78d-eda404838f16)
+
+
+
+
 
 ## b) Alidomain
 
+Vaikka ensimmäinen tehtäväni ei vielä toiminut halutulla tavalla päätin tehdä ainakin alidomainit valmiiksi. Hain Namecheapin omilta sivuilta (https://www.namecheap.com/support/knowledgebase/article.aspx/9776/2237/how-to-create-a-subdomain-for-my-domain/) ohjeet alidomainien tekemiseen.
+
+Aloitin luomalla Advanced DNS-asetusten alta painamalla add new record-painiketta ja täytin sekä A-tietueen tiedot, että CNAME-tiedot luomistani alidomaintiedostoista.
+
+![kuva](https://github.com/user-attachments/assets/50c20bcc-5080-4d66-8a0f-d7c9d6e55122)
 
 
 
+## c) Pubkey
+
+Lähdin ensimmäisenä tutkimaan mikä pubkey on ja miten se toimii. SSH Academyn-sivuilta (https://www.ssh.com/academy/ssh/public-key-authentication) löysin paljon tietoa asiasta. Kyseessä on lyhenne julkisesta avaimesta ja kyseessä on salaustekniikka, tarkemmin epäsymmetrinen salaus. Tässä salauksessa käytetään avain paria, julkinen- ja yksityinen avain. Julkinen avain on julkisesti jaetavissa, kun taas yksityinen avain pidetään salassa muilta. 
+
+Varsinaiseen avaimenluontiin käytin SSH Academyn ohjeita (https://www.ssh.com/academy/ssh/keygen). Alotin luomalla avaimen komennolla `ssh-keygen -t rsa -b 4096`.
+
+![kuva](https://github.com/user-attachments/assets/8db308b5-57d2-49e4-be07-0e353cd24d21)
+
+Sitten kopioin ohjeiden mukaisesti avaimella. Näin avaimesta tulee authorisoitu avain.
+
+![kuva](https://github.com/user-attachments/assets/90f3b89a-71d6-4330-9c1e-3afba195b494)
+
+Nyt minun ei tarvinnut kirjautua salasanalla palvelimeni käyttäjään.
+
+![kuva](https://github.com/user-attachments/assets/8d4e6e35-38b4-4d5b-8f8e-7c2ee4135604)
+
+Tarkistin vielä kaiken varalta uudelta komentoriviltä, että kirjautuminen onnistuu ilman salasanaa myös uudelleen, ja tämäkin onnistui.
+
+![kuva](https://github.com/user-attachments/assets/61285a95-bf53-4925-a6c6-22dcee7c09b6)
+
+## d) DNS-tiedot "host" ja "dig"-komennoilla
+
+Tehtävänanto: Tutki jonkin nimen DNS-tietoja 'host' ja 'dig' -komennoilla. Käytä kumpaakin komentoa kaikkiin nimiin ja vertaa tuloksia. Katso man-sivulta, miten komennot toimivat - esimerkiksi miten 'dig' näyttää kaikki kentät. Analysoi tulokset. Etsi tarvittaessa uusia lähteitä haastaviin kohtiin. Sähköpostin todentamiseen liittyvät SPF ja DMARC -tietojen yksityiskohdat on jätetty vapaaehtoiseksi lisätehtäväksi. Tutkittavat nimet:
+
+-  Oma domain-nimesi. Vertaa tuloksia nimen vuokraajan (namecheap.com, name.com...) weppiliittymässä näkyviin asetuksiin.
+
+- Jonkin pikkuyrityksen, kerhon tai yksittäisen henkilön weppisivut. (Ei kuitenkaan kurssikaverin tällä viikolla vuokrattua nimeä).
+
+- Jonkin suuren ja kaikkien tunteman palvelun tiedot.
 
 ## Lähteet
 
@@ -95,5 +186,9 @@ Miten luon A-tietueen? https://help.one.com/hc/fi/articles/360000799298-Miten-lu
 How do I create a CNAME record? https://help.one.com/hc/fi/articles/360000803517-How-do-I-create-a-CNAME-record
 
 Namecheap: How to Create a Subdomain for my Domain https://www.namecheap.com/support/knowledgebase/article.aspx/9776/2237/how-to-create-a-subdomain-for-my-domain/
+
+SSH Academy: What is SSH Public Key Authentication? https://www.ssh.com/academy/ssh/public-key-authentication#setting-up-public-key-authentication-for-ssh
+
+SSH Academy: Creating an SSH Key Pair for User Authentication https://www.ssh.com/academy/ssh/keygen
 
   
