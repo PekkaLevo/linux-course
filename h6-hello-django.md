@@ -30,7 +30,7 @@ Tehtävänanto: Tee yksinkertainen esimerkkiohjelma Djangolla.
     - Riittää, kun ohjelmasi näkyy esimerkiksi Django Adminsissa.
     - Voit halutessasi tehdä aivan samanlaisen kuin Teron CRM-esimerkissä. Jos olet jo taitavampi, voit hieman soveltaa.
     
-Maanantai 30.9.2024 klo 15.17
+Aloitus: maanantai 30.9.2024 klo 15.17
 
 Aloitin tehtävän lukemalla opettajan ohjeet django asentamisesta (https://github.com/niinaemil1a/LinuxPalvelimet/blob/main/h6.md). 
 
@@ -144,12 +144,129 @@ Nyt nimet näkyvät oikein! Nyt ensimmäinen osa oli valmis ja päätin pitää 
 
 ## b) Djangon tuotantotyyppinen asennus
 
+Tehtävänanto: Tee Djangon tuotantotyyppinen asennus
 
+    - Voit halutessasi tehdä asennuksen omalle, paikalliselle virtuaalikoneelle. Sen ei tarvitse näkyä Internetiin.
+
+Maanantai 30.9.2024 18.30
+
+Jatkoin seuraavan tehtävän parissa tauon jälkeen ja käytin opettajan ohjeita tuotantotyypisen djangon asennuksesta (https://terokarvinen.com/2022/deploy-django/) apunani tehtävässä. Päätin olla asentamatta djangoa omalle palvelimelleni ja harjoitella ensin virtuaalikoneen puolella. Olin jo ennen edellistä tehtävää ehtinyt tehdä päivitykset, joten siirryin suoraan asentamaan bash-completion-ohjelmaa, jonka avulla 'tab' painike automaattisesti saadaan tiedostojen nimiä täytettyä. Asennuksen tein `sudo apt-get -y install bash-completion`-komennolla.
+
+![kuva](https://github.com/user-attachments/assets/294826da-009f-41a6-bc1c-7e7561306a9b)
+
+Olin jo aikaisemmin asentanut Micron ja Apache2:n, joita tässä tehtävässä pyydettiin asentamaan, joten siirryin eteenpäin ja loin uuden kansion ja tiedoston projektia varten. 
+
+![kuva](https://github.com/user-attachments/assets/95703c88-3175-4845-a468-532064cc963a)
+
+Seuraavaksi loin virtuaal hostin uuteen tiedostooni ja otin sivun käyttöön `sudo a2ensite pekkaco.conf` ja otin pois käytöstä vanhat sivut, jotka olivat käytössä samalta IP-osoitteelta `sudo a2dissite 000-default.conf`-komennolla, sekä käynnistin apachen uudelleen.
+
+![kuva](https://github.com/user-attachments/assets/fd044ae0-d374-43a0-a694-fd9d26e689bb)
+
+![kuva](https://github.com/user-attachments/assets/90c4783f-bf89-4784-9f4d-41aed4d3fe86)
+
+![kuva](https://github.com/user-attachments/assets/c64646b2-0437-4b91-bd52-d497720a2f8f)
+
+![kuva](https://github.com/user-attachments/assets/5d9846fa-aafb-4fab-914d-e2df39edce04)
+
+Tarkistin, että configurointi toimii `/sbin/apache2ctl configtest`-komennolla ja kokeilin `curl http://localhost/static/`-komennolla tiedostojen toimintaa.
+
+![kuva](https://github.com/user-attachments/assets/a7d73482-3606-43e6-b5f2-07645741735d)
+
+`curl http://localhost/static/-komento antoi vastauksesksi '404 not found'-virheilmoituksen, eli jokin ei nyt toiminut oikein. Epäilen, että hattu.example.com on edelleen yhdistettynä localhost-osoitteeseen, sillä weppiselaimessa tämä sivu tulee kun haen 'localhost'-haulla.
+
+![kuva](https://github.com/user-attachments/assets/5c4d7b71-7d93-4dcc-865c-05f54db2b351)
+
+Lähdin selvittämään, miten saisin kytkettyä hattu.example.com:n pois, vaikka olin jo tehnyt `sudo a2dissite`-komennon. Chatgpt:n mukaan `sudo a2dissite`-komentoon kuuluisi lisätä haluttu tiedosto, jonka haluaa laittaa pois päältä. Kokeilin siis seuraavaksi `sudo a2dissite hattu.example.com.conf`-komentoa ja käynnistin  apachen uudelleen.
+
+![kuva](https://github.com/user-attachments/assets/a36cd911-c1e2-4459-baf9-ad33ff7ac4f5)
+
+Nyt sivu toimiikin oikein, joten voin jatkaa tehtävää.
+
+![kuva](https://github.com/user-attachments/assets/cb262ea6-7628-40d2-a3eb-5d09c22c9698)
+
+Seuraavaksi loin uuden virtuaaliympäristön `publicproject`-hakemistoon `virtualenv -p python3 --system-site-packages env`-komennolla. Tämän jälkeen aktivoin virtuaaliympäristön `source env/bin/activate`-komennolla ja tarkastin, että pip-paketin asentaja löytyy `env/`-hakemiston alta.
+
+![kuva](https://github.com/user-attachments/assets/66c5b897-42f4-4cef-b82e-e8ee94f8767d)
+
+Tein seuraavaksi `requirements.txt`-tekstitiedoston `micro requirements.txt`-komennolla ja lisäsin asennettavan paketin nimen 'django' ja tarkistin vielä, että se oli oikein kirjoitettu `cat requirements.txt`, ettei mitään hakkerointi-ohjelmaa tullut ladattua.
+
+![kuva](https://github.com/user-attachments/assets/b3e3a5ed-b263-4c33-9581-97a694c653bf)
+
+Seuraavaksi tein ohjelman asennuksen `pip install -r requirements.txt`-komennolla ja tarkistin djangon version `django-admin --version`-komennolla.
+
+![kuva](https://github.com/user-attachments/assets/b882f0cf-ae96-4575-90b8-5f165fe0fb9c)
+
+Sitten käynnistin projektin `django-admin startproject pekkaco`-komennolla ja jatkoin ohjeiden mukaisesti tehtävän tekemistä.
+
+![kuva](https://github.com/user-attachments/assets/53247963-5249-4123-b600-bb02a6ff73a9)
+
+Seuraavaksi lisäsin opettajan ohjeissa annetuja tietoja `sudoedit /etc/apache2/sites-available/pekkaco.conf`-komennolla ja tallensin muutokset. 
+
+![kuva](https://github.com/user-attachments/assets/7e6fdbaf-f4ff-457f-a058-122847e11dec)
+
+Tämän jälkeen asensin Apache WSGI moduulin `sudo apt-get -y install libapache2-mod-wsgi-py3`-komennolla ja tarkistin syntaxit `/sbin/apache2ctl configtest`-komennolla.
+
+![kuva](https://github.com/user-attachments/assets/03d7df6f-24b6-48c1-aa49-c35b21f2b66b)
+
+Käynnistin Apachen uudelleen komennolla `sudo systemctl restart apache2` ja tarkistin sivun toiminnan `curl -s localhost|grep title`-komennolla.
+
+![kuva](https://github.com/user-attachments/assets/380a282e-6751-4a25-92ac-4b4e629e517b)
+
+Tarkistin vielä, että kyseessä oli Apache.
+
+![kuva](https://github.com/user-attachments/assets/997c1730-f059-40e2-901c-82622e88599a)
+
+Sitten vielä hain selaimesta `localhost`-haulla, että sivu on oikein.
+
+![kuva](https://github.com/user-attachments/assets/fa450544-71aa-4ace-a6ae-6883e64a9f0f)
+
+Seuraavaksi otin virheen korjauksen pois päältä ja muutin `ALLOWED_HOSTS`-osioon vain localhost. 
+![kuva](https://github.com/user-attachments/assets/420dd7f6-fe2b-4b4d-b232-a0352e7c9abd)
+
+![kuva](https://github.com/user-attachments/assets/a2f3b7e7-303e-4a83-8614-004ecd90f8f5)
+
+Sitten käynnistin Apachen uudelleen ja kokeilin komentoa `curl -s localhost|grep title`.
+
+![kuva](https://github.com/user-attachments/assets/32f43cca-c5d9-407e-b420-706113dfeb9e)
+
+![kuva](https://github.com/user-attachments/assets/f47b4a58-3dd9-4021-8060-87bca90ac529)
+
+Kokeilin vielä `http://localhost/admin`-hakua, jolla sivu toimi, mutta käyttäjä minulta vielä puuttui. Ensin täytyi lisätä tyyli, jonka sai muokkaamalla `pekkaco/settings.py`-tiedostoon `STATIC_URL = 'static/'`-kohdan alle `import os` ja `STATIC_ROOT = os.path.join(BASE_DIR, 'static/')`.
+
+![kuva](https://github.com/user-attachments/assets/96df2550-36f4-401b-ba40-4e75bc19fb8b)
+
+![kuva](https://github.com/user-attachments/assets/682737c0-b6cf-4d27-a7fa-b2ac11eaa796)
+
+Tämän jälkeen suoritin `./manage.py collectstatic`-komennon.
+
+![kuva](https://github.com/user-attachments/assets/8f6b41e1-7fe6-4d6f-9d90-d685870056b0)
+
+Tämän jälkeen hain `http://localhost/admin`-sivun uudelleen ja tyylin muutokset olivat heti nähtävissä.
+
+![kuva](https://github.com/user-attachments/assets/d6f54d87-cc68-4912-8fb0-3edddfa8f1e1)
+
+Vielä viimeiseksi pääkäyttäjän tekeminen, johon ensiksi ajamme komennot `./manage.py makemigrations` ja `./manage.py migrate`, sekä luomme uuden pääkäyttäjän `./manage.py createsuperuser`-komennolla, johon generoimme salasanan pwgen-ohjelmalla.
+
+![kuva](https://github.com/user-attachments/assets/a7cb2d33-3925-4fab-be60-f4224d1af24a)
+
+![kuva](https://github.com/user-attachments/assets/52b309ac-0ba6-44d3-a5c1-9f7a3cb64ef7)
+
+Sitten vielä yritin kirjautua pääkäyttäjän tunnuksilla sisään.
+
+![kuva](https://github.com/user-attachments/assets/3d72bb0d-5bce-4fed-8193-1b802c989f15)
+
+Kirjautuminen onnistui ongelmitta.
+
+Lopetus: maanantai 30.9.2024 klo 22.03
 
 ### Lähteet
 
-Karvinen, Tero 2024: https://terokarvinen.com/linux-palvelimet/
+Karvinen, Tero 2024: Linux Palvelimet 2024 alkusyksy https://terokarvinen.com/linux-palvelimet/
 
 Karvinen, Tero 2022: Django 4 Instant Customer Database Tutorial https://terokarvinen.com/2022/django-instant-crm-tutorial/
 
 Linux: PIP https://www.linux.fi/wiki/PIP
+
+Karvinen, Tero 2022 Deploy Django 4 - Production Install https://terokarvinen.com/2022/deploy-django/
+
+Chatgpt: https://chatgpt.com/
