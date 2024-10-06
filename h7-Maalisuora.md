@@ -86,6 +86,38 @@ Lopetus sunnuntai 6.10.2024 klo 18.05.
 
 ## C) Ratkaise vanha arvioitava laboratorioharjoitus soveltuvin osin
 
+Aloitus sunnuntai 6.10.2024 klo 20.01
+
+Päätin käyttää tehtävään kevään 2023 kurssin labraharjoitusta ja sovelsin tehtäviä siten, että a, b ja c-kohdat jätin tekemättä, sillä kohdat eivät olleet oleellisia harjoituksessa.
+
+d) 'howdy'
+
+Lisäsin päivämäärän ja tekstin "Labraharjoitus" kansion `labraharj` tiedostoon `howdy`, sekä oikeudet tiedostoon.
+
+![kuva](https://github.com/user-attachments/assets/56bae571-5822-4073-a826-f23caca20dd8)
+
+
+![kuva](https://github.com/user-attachments/assets/8a741f00-7eb8-4f00-9255-a2295678eb5a)
+
+Komennon toimivuus eri hakemistoista.
+
+![kuva](https://github.com/user-attachments/assets/c0d51acd-6727-4d7f-aa8b-e76878394838)
+
+e) Etusivu uusiksi
+
+Tehtävässä tuli asentaa apache, joka minulta löytyikin jo, sekä tehdä yritykselle "AI Kakone"-kotisivut, jota tulisi voida muokata normaalin käyttäjän oikeuksilla.
+
+![kuva](https://github.com/user-attachments/assets/1af05f26-da98-4703-9edc-23f0a968a03f)
+
+sivun `aikakone.com`.oikeudet.
+
+![kuva](https://github.com/user-attachments/assets/439a0455-b11e-488a-af1f-e020de454866)
+
+
+
+
+
+
 ### Lähteet
 
 Karvinen, Tero 2024 https://terokarvinen.com/linux-palvelimet/
