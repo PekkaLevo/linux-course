@@ -1,4 +1,4 @@
-# Maalisuora
+# h7-Maalisuora
 
 ### Virtuaalikone
 
@@ -70,7 +70,7 @@ Tallennettuani tiedoston, ryhdyin määrittelmään tiedoston oikeuksia. Annoin 
 
 ![kuva](https://github.com/user-attachments/assets/289129f8-36fe-44b5-8c9e-d9b1c481c175)
 
-Kopioin tiedoston vielä **/usr/local/bin** hakemistoon, jotta komennon voi suorittaa mistä tahansa kansiosta `sudo cp tervehdys /usr/local/bin`-komennolla.
+Kopioin tiedoston vielä **/usr/local/bin** hakemistoon `sudo cp tervehdys /usr/local/bin`-komennolla, jotta `tervehdys`-komennon voi suorittaa mistä tahansa kansiosta.
 
 ![kuva](https://github.com/user-attachments/assets/c12e4cdf-da31-488b-bbde-4e9778fa4ae6)
 
