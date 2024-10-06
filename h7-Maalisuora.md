@@ -59,7 +59,7 @@ Sitten vielä ajoin komennon `bash heimaailma.sh`, joka tuotti vastauksena "Hei 
 
 ## b) Laita Linuxiin uusi komento niin, että kaikki käyttäjät voivat ajaa sitä
 
-Tässä tehtävässä minun tuli luoda Shell script, jota kaikki koneen käyttäjät voivat ajaa. Tutkin ensin internetistä, mitä Shell scriptillä tehdään. Tech targeting [sivujen](https://www.techtarget.com/searchdatacenter/definition/shell-script) mukaan shell script sisältää sarjan komentoja, jotka voidaan suorittaa shellissä. Kysessä on siis automatisointia.
+Tässä tehtävässä minun tuli luoda Shell script, jota kaikki koneen käyttäjät voivat ajaa. Tutkin ensin internetistä, mitä Shell scriptillä tehdään. Tech targeting [sivujen](https://www.techtarget.com/searchdatacenter/definition/shell-script) mukaan shell script sisältää sarjan komentoja, jotka voidaan suorittaa shellissä. Kyseessä on siis automatisointia.
 
 Aloitin tehtävän tekemällä `tervehdys`-tiedoston, johon kirjoitin sisällöksi tervehdyksiä, joka voi olla eri kielellä, jokainen kerta kun shell scriptiä kutsutaan.
 
