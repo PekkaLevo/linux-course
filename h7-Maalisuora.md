@@ -113,10 +113,11 @@ sivun `aikakone.com`.oikeudet.
 
 ![kuva](https://github.com/user-attachments/assets/439a0455-b11e-488a-af1f-e020de454866)
 
+g) Salattua hallintaa
 
+h) Djangon lahjat
 
-
-
+h) Tuotantopropelli
 
 ### Lähteet
 
