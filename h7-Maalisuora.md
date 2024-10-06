@@ -115,9 +115,17 @@ sivun `aikakone.com`.oikeudet.
 
 g) Salattua hallintaa
 
+Tehtävässä tuli asentaa ssh-palvelin, tehdä uusi käyttäjä ja automatisoida kirjautuminen julkisen avaimen menetelmällä.
+
+![kuva](https://github.com/user-attachments/assets/ae24ef95-f3fd-4dbe-85f4-7b2cf48673f3)
+
 h) Djangon lahjat
 
+Tehtävässä tuli asentaa omalle käyttäjälle django kehitysympäristö jatehdä tietokantaan lista, jossa on kirjautuminen salasanalla, Djangon omalla ylläpitoliittymällä tietokannan muokkausta wepin kautta, käyttäjälle Erkki, jossa ei ole ylläpito-oikeuksia ja taulu Assistants, johon jokaiselle tietueelle oma nimi.
+
 h) Tuotantopropelli
+
+Tehtävässä tuli tehdä tuotantotyyppinen asennus Djangosta ja laittaa Django-lahajtietokanta tuotantotyyppiseen asennukseen.
 
 ### Lähteet
 
