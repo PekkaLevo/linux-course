@@ -119,9 +119,20 @@ Tehtävässä tuli asentaa ssh-palvelin, tehdä uusi käyttäjä ja automatisoid
 
 ![kuva](https://github.com/user-attachments/assets/ae24ef95-f3fd-4dbe-85f4-7b2cf48673f3)
 
+Lopetin tehtävien tekemisen tältäpäivältä ja jatkoin loppuun myöhemmin.
+
 h) Djangon lahjat
 
-Tehtävässä tuli asentaa omalle käyttäjälle django kehitysympäristö jatehdä tietokantaan lista, jossa on kirjautuminen salasanalla, Djangon omalla ylläpitoliittymällä tietokannan muokkausta wepin kautta, käyttäjälle Erkki, jossa ei ole ylläpito-oikeuksia ja taulu Assistants, johon jokaiselle tietueelle oma nimi.
+Tehtävän aloitus maanantai 7.10.2024 klo 11.15.
+
+Tehtävässä tuli asentaa omalle käyttäjälle django kehitysympäristö ja tehdä tietokantaan lista tekoälyistä, jossa on ominaisuuksina kirjautuminen salasanalla, Djangon omalla ylläpitoliittymällä tietokannan muokkausta wepin kautta, käyttäjälle Erkki, jossa ei ole ylläpito-oikeuksia ja taulu Assistants, johon jokaiselle tietueelle oma nimi.
+
+![kuva](https://github.com/user-attachments/assets/56fba35d-bba4-48ea-b7a2-3b3ed4338d9f)
+
+![kuva](https://github.com/user-attachments/assets/1890b233-d98e-404f-b7df-195f8b4a8c88)
+
+![kuva](https://github.com/user-attachments/assets/2cad81de-7171-45a3-9361-29d70e0a661b)
+
 
 h) Tuotantopropelli
 
