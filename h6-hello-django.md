@@ -32,7 +32,7 @@ Tehtävänanto: Tee yksinkertainen esimerkkiohjelma Djangolla.
     
 Aloitus: maanantai 30.9.2024 klo 15.17
 
-Aloitin tehtävän lukemalla opettajan ohjeet django asentamisesta (https://github.com/niinaemil1a/LinuxPalvelimet/blob/main/h6.md). 
+Aloitin tehtävän lukemalla opettajan ohjeet django asentamisesta. 
 
 Ensimmäisenä suoritin mahdolliset päivitykset `sudo apt-get update`- sekä `sudo apt-get upgrade`-komennoilla. 
 
