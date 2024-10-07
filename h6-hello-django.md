@@ -32,7 +32,7 @@ Tehtävänanto: Tee yksinkertainen esimerkkiohjelma Djangolla.
     
 Aloitus: maanantai 30.9.2024 klo 15.17
 
-Aloitin tehtävän lukemalla opettajan ohjeet django asentamisesta. 
+Aloitin tehtävän lukemalla opettajan [ohjeet](https://terokarvinen.com/2022/django-instant-crm-tutorial/) django asentamisesta. 
 
 Ensimmäisenä suoritin mahdolliset päivitykset `sudo apt-get update`- sekä `sudo apt-get upgrade`-komennoilla. 
 
