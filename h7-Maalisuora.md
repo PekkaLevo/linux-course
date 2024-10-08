@@ -133,10 +133,13 @@ Tehtävässä tuli asentaa omalle käyttäjälle django kehitysympäristö ja te
 
 ![kuva](https://github.com/user-attachments/assets/2cad81de-7171-45a3-9361-29d70e0a661b)
 
+Joudin lopettamaan tällä kertaa tähän tehtävien osalta, pyrin tekemään viimeisen tehtävän vielä ennen palautusaikaa, jos ehdin.
+
+Lopetus maanantai 7.10.2024 klo 12.00
 
 h) Tuotantopropelli
 
-Tehtävässä tuli tehdä tuotantotyyppinen asennus Djangosta ja laittaa Django-lahajtietokanta tuotantotyyppiseen asennukseen.
+En valitettavasti ehtinyt viimeistä tehtävää tekemään palautusaikaraajan mennessä. Pyrin kuitenkin tekemään tämän tehtävän valmiiksi palautusajan jälkeen.
 
 ### Lähteet
 
